@@ -13,25 +13,31 @@
 </head>
 
 <body>
-  <main>
-    <!-- Preguntar si puede ser header y h1 y nav -->
-    <img src="../assets/images/logo-awesome.svg" alt="logo awesome cards">
-    <h1> Crea tu tarjeta de visita</h1>
-    <h2>Crea mejores contactos profesionales de forma fácil y cómoda</h2>
+  <header class="header">
+    <img class="header__logo" src="../assets/images/logo-awesome.svg" alt="logo awesome cards">
+  </header>
+  <main class="main">
+    <h1 class="main__title"> Crea tu tarjeta de visita</h1>
+    <h2 class="main__subtitle">Crea mejores contactos profesionales de forma fácil y cómoda</h2>
 
-    <!--    opcion B: poner un <nav></nav> -->
-    <article>
-      <ul>
-        <li>Diseña<i class="fa fa-gimp" aria-hidden="true"></i></li>
-        <li>Rellena <i class=""></i></li>
-        <li>Comparte<i class=" fa fa-share-alt" aria-hidden="true"></i> </li>
-      </ul>
+    <article class="article">
+      <ol class="article__list">
+        <li class="article__list--item">Diseña<i class="article__list--icon">
+            <!-- buscar icono -->
+          </i> </li>
+        <li class="article__list--item">Rellena <i class="article__list--icon "></i> <!-- buscar icono -->
+        </li>
+        <li class="article__list--item">Comparte<i class="article__list--icon  fa fa-share-alt" aria-hidden="true"></i>
+        </li>
+      </ol>
     </article>
-    <a href="">Comenzar</a>
+
+    <a class="main__buttom" href="">Comenzar</a> <!-- terminar de poner atributos ejemplo title -->
   </main>
-  <footer>
-    <small>Awesome profile-cards @2021</small>
-    <img src="../assets/images/logo-adalab.png" alt="logo adalad">
+
+  <footer class="footer">
+    <small class="footer__small">Awesome profile-cards @2021</small>
+    <img class=footer__img src="../assets/images/logo-adalab.png" alt="logo adalad">
 
   </footer>
 
