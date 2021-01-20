@@ -6,6 +6,11 @@
   font-family: $font-primary;
 }
 .central-column {
-  margin: 0px 35px;
-  width: 100%;
+  padding: 0px 35px;
+  @media all and (min-width: 768px) {
+    padding: 0px 175px;
+  }
+}
+.body {
+  height: 100vh;
 }
