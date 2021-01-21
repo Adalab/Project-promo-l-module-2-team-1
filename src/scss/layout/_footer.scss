@@ -8,11 +8,10 @@
   justify-content: center;
   padding: 18px 61px 20px;
   height: 19.33vh;
-
   @media all and (min-width: 768px) {
-    height: 60px;
     flex-direction: row;
     padding: 10px 40px;
+    height: 5.87vh;
   }
   &__small {
     font-family: $font-primary;

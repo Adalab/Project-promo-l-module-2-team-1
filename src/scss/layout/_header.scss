@@ -1,9 +1,12 @@
-.header {
+.page-landing .header {
   display: flex;
   justify-content: center;
   width: 100%;
   background-color: $color-background-landing;
   height: 33.98vh;
+  @media all and (min-width: 768px) {
+    height: 47.51vh;
+  }
   &__logo {
     width: 250px;
     height: 63px;
@@ -16,7 +19,22 @@
       height: 105px;
     }
   }
-
-  .page-cards .header {
+}
+.page-cards .header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $color-background-cards;
+  @media all and (min-width: 768px) {
+    justify-content: flex-start;
+    padding-left: 40px;
+  }
+  &__logo {
+    width: 201px;
+    height: 50px;
+    margin-top: 31px;
+    margin-bottom: 30px;
+    @media all and (min-width: 768px) {
+    }
   }
 }
