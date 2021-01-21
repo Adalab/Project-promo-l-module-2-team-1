@@ -5,9 +5,3 @@
   list-style-type: none;
   font-family: $font-primary;
 }
-.central-column {
-  padding: 0px 35px;
-  @media all and (min-width: 768px) {
-    padding: 0px 175px;
-  }
-}
