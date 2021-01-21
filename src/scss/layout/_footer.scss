@@ -14,13 +14,13 @@
   }
   &__small {
     font-family: $font-primary;
-    color: $color-footer-text;
+    color: rgba(107, 107, 107, 0.5);
     text-align: center;
     size: 14px;
     line-height: 20px;
     width: 100%;
     margin-bottom: 12px;
-
+  
     @media all and (min-width: 768px) {
       text-align: left;
       margin: 8px 0 12px;
