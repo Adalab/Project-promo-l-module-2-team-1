@@ -1,26 +1,16 @@
 .sharecards{
 background-color:white;
- &.fa fa-share-alt {
-  color: aqua;
 
  }
  .fa-share-alt{
 color: $color-icons;
 font-size: 18px;
+}
 
- }
- .{
-  font-size: 98px;
-
-
- }
 .section__share__container {
   border-bottom: 1px orange;
   text-align: center;
-.far fa-address-card {
-
-
-}
+  
   .button__create {
     width: 199px;
     height: 50px;
@@ -56,5 +46,4 @@ font-size: 18px;
   }
 
   
-}
 }
