@@ -6,6 +6,9 @@
   align-items: center;
   text-align: center;
   height: 46.69vh;
+  @media all and (min-width: 768px) {
+    height: 46.63vh;
+  }
   &__title {
     font-family: $font-title;
     font-size: 19.2px;
