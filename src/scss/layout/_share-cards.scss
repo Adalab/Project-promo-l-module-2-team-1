@@ -1,0 +1,31 @@
+.article__share_button{
+    margin: 0 20px 0 23px;
+    border-top: 1px solid #d8d8d8;
+    &__article__share__button {
+      width: 16px;
+      height: 18px;
+      color: #e17334;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      margin-right: 12px;
+    }
+    & .fa-twitter {
+      width: 18px;
+      height: 18px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: white;
+    }
+
+}

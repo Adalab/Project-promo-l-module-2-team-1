@@ -1,4 +1,18 @@
 <section>
-    <include src="./sections-cards-header.html" title="Comparte"></include>
+    <include src="./sections-cards-header.html" icon="fa fa-share-alt" aria-hidden="true" title="Comparte"></include>
 
+    <!--Share open-->
+    <div class="form__open__share hidden">
+      <div class="article__share__container">
+        <button class="article__share__button" disabled>
+          <i class="far fa-address-card"></i>CREAR TARJETA
+        </button>
+      </div>
+      <div class="article__share__create hidden">
+        <h3 class="article__share_copy">La tarjeta ha sido creada:</h3>
+        <p class="response link_card"></p>
+        <a class="article__twitter__button">
+          <button class="child"><i class="fa fa-twitter" aria-hidden="true"></i> Compartir en Twitter</button>
+        </a>
+      </div>
 </section>
