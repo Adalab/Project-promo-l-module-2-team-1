@@ -1,0 +1,55 @@
+.fill {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  &__form {
+    margin: 25px 19px 0;
+    &--labels {
+      font-family: $font-primary;
+      font-size: 14px;
+      color: $color-palette1-dark;
+      line-height: 20px;
+    }
+    &--inputs {
+      width: 281px;
+      height: 30px;
+      border: solid 1px $color-palette1-light;
+      margin-top: 7px;
+      margin-bottom: 20px;
+      padding: 3px 0 7px 9px;
+      ::placeholder {
+        font-family: $font-primary;
+        font-size: 14px;
+        color: $color-placeholder;
+        line-height: 20px;
+      }
+    }
+    &--image-profile {
+      display: flex;
+      flex-direction: column;
+    }
+    &--button {
+      background: $color-icons;
+      width: 140px;
+      height: 30px;
+      border: solid $color-icons;
+      border-radius: 3px;
+      box-shadow: 0 0 4px 0 $color-black;
+      font-family: $font-primary;
+      font-size: 14px;
+      color: $color-background-cards;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    &--box {
+      width: 30px;
+      height: 30px;
+      border: solid 1px $color-palette1-light;
+      position: absolute;
+      left: 50%;
+      bottom: 0.8%;
+      margin-left: 20px;
+    }
+  }
+}
