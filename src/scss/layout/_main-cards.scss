@@ -1,0 +1,28 @@
+.main-cards {
+  background: linear-gradient(
+    to bottom,
+    $color-background-landing,
+    $color-background-cards 9%
+  );
+}
+.section-title {
+  margin: 0 19px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: $font-primary;
+  font-weight: 600;
+  font-size: 18px;
+  color: $color-secondary;
+  margin: 0 67px 2 10px;
+}
+
+.page-cards .article__list--icon {
+  font-size: 18px;
+}
+
+.fa {
+  font-size: 18px;
+}
