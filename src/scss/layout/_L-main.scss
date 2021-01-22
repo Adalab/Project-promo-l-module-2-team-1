@@ -2,7 +2,7 @@
   background-color: $color-background-landing;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   height: 46.69vh;
@@ -28,18 +28,18 @@
   }
   &__button {
     margin-top: 38.6px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     width: 129px;
     height: 42px;
     border-radius: 21px;
     background-color: $color-palette1-dark;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     @media all and (min-width: 768px) {
-      margin-top: 186px;
-      margin-bottom: 59px;
+      /*  margin-top: 186px; */
+      /*       margin-bottom: 59px;
+ */
     }
     &--link {
       color: $color-background-cards;
@@ -50,6 +50,7 @@
     }
   }
 }
+
 .article {
   width: 268px;
   border-radius: 4px;
