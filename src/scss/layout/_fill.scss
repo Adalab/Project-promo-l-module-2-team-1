@@ -1,9 +1,10 @@
 .fill {
-  margin: 10px 19px 30px 19px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   display: grid;
   grid-template-columns: 1fr;
   &__form {
-    margin-top: 25px;
+    margin: 25px 19px 0;
     &--labels {
       font-family: $font-primary;
       font-size: 14px;
