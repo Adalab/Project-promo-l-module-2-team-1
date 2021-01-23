@@ -7,6 +7,20 @@
     $colorBackSilver,
     $colorBackGrey
   );
+  @media all and (min-width: 768px) {
+    width: 329px;
+    height: 812px;
+    padding: 223px 44px 260px 45px;
+    margin: 20px 40px 20px 0;
+    border-radius: 6px;
+  }
+
+  @media all and (min-width: 1024px) {
+    width: 585px;
+    height: 812px;
+    padding: 223px 172px 260px 173px;
+    /* margin: 20px 40px 20px 0;*/
+  }
 }
 
 .photo-button {
@@ -50,7 +64,6 @@
   &__title2 {
     font-family: $font-cards;
     font-size: 16px;
-    /* font-weight: 600;*/
     line-height: 1.25;
     color: $color-secondary;
     padding: 4px 52px 10px 15px;
@@ -58,6 +71,7 @@
   &__img {
     width: 240px;
     height: 200px;
+    background-size: cover;
   }
   &__list {
     display: flex;

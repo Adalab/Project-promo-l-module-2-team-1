@@ -26,3 +26,31 @@
 .fa {
   font-size: 18px;
 }
+
+@media all and (min-width: 768px) {
+  .main-cards {
+    &__sections {
+      display: flex;
+      flex-direction: row-reverse;
+      &--form {
+      }
+    }
+  }
+}
+
+/*
+@media all and (min-width: 768px) {
+  .main-cards {
+    &__sections {
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row-reverse;
+      &--form {
+        width: 50%;
+        padding: 10px;
+      }
+    }
+  }
+}
+*/
