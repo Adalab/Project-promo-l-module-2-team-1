@@ -1,10 +1,11 @@
 .fill {
   margin-top: 10px;
   margin-bottom: 30px;
-  display: grid;
-  grid-template-columns: 1fr;
   &__form {
     margin: 25px 19px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(14, 1fr, 75px);
     &--labels {
       font-family: $font-primary;
       font-size: 14px;
@@ -46,10 +47,12 @@
       width: 30px;
       height: 30px;
       border: solid 1px $color-palette1-light;
-      position: absolute;
-      left: 50%;
-      bottom: 0.8%;
       margin-left: 20px;
+      margin-top: 9px;
     }
   }
+}
+.button-box-container {
+  display: flex;
+  width: 100%;
 }
