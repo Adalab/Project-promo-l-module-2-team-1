@@ -16,12 +16,161 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
-<body>
+<body class="page-cards">
 
     <header class="header central-column">
       <img class="header__logo" src="./assets/images/logo-awesome.svg" alt="logo awesome cards">
     </header>
-    <!-- Aquí irían los @includes de las 4 secciones: foto, diseña, rellena y comparte -->
+    <main class="main-cards">
+        <div class="main-cards__sections">
+            <section class="photo">
+
+                <div class="photo-button ">
+                    <a class="photo-button__link" href=""><i class="fa fa-trash" aria-hidden="true"></i>Reset</a>
+                </div>
+
+                <article class="photocard">
+                    <h2 class="photocard__title">Nombre apellido</h2>
+                    <p class="photocard__title2">Front-end developer</p>
+                    <img class="photocard__img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5d8sIOWgK0q6qujan6wAZrnA7XY78QUm4xQ&usqp=CAU"
+                        alt="" />
+                    <ul class="photocard__list">
+                        <li class="photocard__list--item">
+                            <a href="#" class="photocard__list--link icon fa fa-envelope"></a>
+                        </li>
+                        <li class="photocard__list--item">
+                            <a href="#" class="photocard__list--link icon fa fa-mobile"></a>
+                        </li>
+                        <li class="photocard__list--item">
+                            <a href="#" class="photocard__list--link icon fa fa-linkedin"></a>
+                        </li>
+                        <li class="photocard__list--item">
+                            <a href="#" class="photocard__list--link icon fa fa-github-alt"></a>
+                        </li>
+                    </ul>
+                </article>
+
+            </section>
+            <form class="main-cards__sections--form">
+                <section>
+                    <h2 class="section-title">
+                        <div class="title-icon">
+                            <span class="article__list--icon fas fa fa-object-ungroup"></span>
+                            <span class="title">Diseña</span>
+                        </div>
+                        <span class=""><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    </h2>
+
+                    <div class="design">
+                        <h3 class="design__title">Colores</h3>
+                        <div class="design__container">
+                            <div class="design__palette">
+                                <label class="design__label">
+                                    <input class=" design__radio" bh type="radio" name="palette" />
+                                    <ul class="design__square">
+                                        <li class="design__square--color color1">Color 1</li>
+                                        <li class="design__square--color color2">Color 2</li>
+                                        <li class="design__square--color color3">Color 3</li>
+                                    </ul>
+                            </div>
+                            <div class="design__palette">
+                                </label>
+                                <label class="design__label">
+                                    <input class=" design__radio" type="radio" name="palette" />
+                                    <ul class="design__square">
+                                        <li class="design__square--color color 4">Color 1</li>
+                                        <li class="design__square--color color5">Color 2</li>
+                                        <li class="design__square--color color6">Color 3</li>
+                                    </ul>
+                            </div>
+                            <div class="design__palette">
+                                </label>
+                                <label class="design__label">
+                                    <input class=" design__radio" type="radio" name="palette" />
+                                    <ul class="design__square">
+                                        <li class="design__square--color color7 ">Color 1</li>
+                                        <li class="design__square--color color8">Color 2</li>
+                                        <li class="design__square--color color9">Color 3</li>
+                                    </ul>
+                                </label>
+                            </div>
+                            <div class="design__palette">
+                                </label>
+                                <label class="design__label">
+                                    <input class=" design__radio" type="radio" name="palette" />
+                                    <ul class="design__square">
+                                        <li class="design__square--color color10 ">Color 1</li>
+                                        <li class="design__square--color color11">Color 2</li>
+                                        <li class="design__square--color color12">Color 3</li>
+                                    </ul>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="fill">
+                    <h2 class="section-title">
+                        <div class="title-icon">
+                            <span class="article__list--icon fas fa fa-keyboard-o"></span>
+                            <span class="title">Rellena</span>
+                        </div>
+                        <span class=""><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    </h2>
+
+                    <div class="fill__form">
+                        <label class="fill__form--labels" for="fullName">Nombre completo</label>
+                        <input id="fullName" type="text" name="fullName" placeholder="Ej: Sally Jill" class="fill__form--inputs">
+                        <label class="fill__form--labels" for="position">Puesto</label>
+                        <input id="position" type="text" name="position" placeholder="Ej: Front-end unicorn" class="fill__form--inputs">
+                        <div class="fill__form--image-profile">
+                            <span class="fill__form--labels">Imagen de perfil</span>
+                            <div class="button-box-container">
+                                <button class="fill__form--button">Añadir imagen</button>
+                                <span class="fill__form--box"></span>
+                            </div>
+                        </div>
+                        <label class="fill__form--labels" for="">Email</label>
+                        <input id="emailAddress" type="email" name="emailAddress" placeholder="Ej: sally-hill@gmail.com"
+                            class="fill__form--inputs">
+                        <label class="fill__form--labels" for="telephone">Teléfono</label>
+                        <input id="telephone" type="tel" name="telephone" placeholder="Ej: 555-55-55-55" class="fill__form--inputs">
+                        <label class="fill__form--labels" for="linkedin">Linkedin</label>
+                        <input id="linkedin" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill"
+                            class="fill__form--inputs">
+                        <label class="fill__form--labels" for="github">Github</label>
+                        <input id="github" type="text" name="github" placeholder="Ej: @sally-hill" class="fill__form--inputs">
+                    </div>
+
+                </section>
+                
+                  <h2 class="section-title">
+                      <div class="title-icon">
+                          <span class="article__list--icon fas fa fa-share-alt"></span>
+                          <span class="title">Comparte</span>
+                      </div>
+                      <span class=""><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                  </h2> 
+
+                  <section class="sharecards"></section>
+                    <!--Share open-->
+                    
+                      <div class="section__share__container">
+                        <button class="button__create"><i class="fa fa-address-card-o" aria-hidden="true"></i>Crear tarjeta</button>
+                      </div>
+                     
+                      <div class="section__share__create hidden">
+                        <h3 class="section__share_copy">La tarjeta ha sido creada:</h3>
+                        <p class="response link_card"></p>
+                        <a class="section__twitter__button">
+                          <button class="share"><i class="fa fa-twitter" aria-hidden="true"></i> Compartir en Twitter</button>
+                        </a>
+                      </div>
+                </section>
+            </form>
+
+        </div>
+    </main>
     <footer class="footer central-column">
       <small class="footer__small">Awesome profile-cards @2021</small>
       <img class=footer__img src="./assets/images/logo-adalab.png" alt="logo adalad">
