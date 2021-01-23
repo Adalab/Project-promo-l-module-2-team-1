@@ -1,0 +1,64 @@
+.sharecards{
+background-color:white;
+
+ }
+.section__share__container {
+  border-bottom: 1px orange;
+  text-align: center;
+  
+  .button__create {
+    width: 199px;
+    height: 50px;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    font-size: 18px;
+    color: $color-background-cards;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    background-color: $color-icons;
+    border: 1px solid $color-secondary;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    color: $color-background-cards;
+    margin-bottom: 30px;
+    & .fa-address-card-o {
+      width: 25px;
+      height: 22px;
+      font-size: 22px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      margin-right: 9px;
+    }
+    &:disabled {
+      background-color: gray;
+      border: 1px solid gray;
+      cursor: not-allowed;
+    }
+  }
+          
+  & .button__share {
+    width: 181px;
+    height: 30px;
+    margin: 0 30px 30px 50px;
+    border-radius: 3px;
+    border: transparent;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    background-color: #00a0f5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+}
