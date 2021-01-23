@@ -1,0 +1,96 @@
+.photo {
+  height: 457px;
+  width: 100%;
+  padding: 38px 35px 40px 45px;
+  background-image: linear-gradient(
+    to bottom,
+    $colorBackSilver,
+    $colorBackGrey
+  );
+  @media all and (min-width: 768px) {
+    width: 329px;
+    height: 812px;
+    padding: 223px 44px 260px 45px;
+    margin: 20px 40px 20px 0;
+    border-radius: 6px;
+  }
+
+  @media all and (min-width: 1024px) {
+    width: 585px;
+    height: 812px;
+    padding: 223px 172px 260px 173px;
+    /* margin: 20px 40px 20px 0;*/
+  }
+}
+
+.photo-button {
+  width: 75px;
+  height: 30px;
+  margin-bottom: 20px;
+  border: solid 1px $color-background-cards;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    color: $color-secondary;
+  }
+}
+.fa-trash {
+  padding-right: 8px;
+}
+
+.photocard {
+  background-color: $color-background-cards;
+  width: 240px;
+  height: 329px;
+  border-radius: 2px;
+  box-shadow: 0 1px 10px 0 $color-shadow1, 0 1px 3px $color-shadow2;
+
+  &__title {
+    padding: 21px 14px 0 15px;
+    font-size: 18px;
+    color: $color-primary;
+    text-transform: capitalize;
+    line-height: 1.11;
+    font-weight: bold;
+    font-family: $font-cards;
+  }
+  &__title2 {
+    font-family: $font-cards;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $color-secondary;
+    padding: 4px 52px 10px 15px;
+  }
+  &__img {
+    width: 240px;
+    height: 200px;
+    background-size: cover;
+  }
+  &__list {
+    display: flex;
+    padding: 10px 62px 12px 20px;
+    &--item {
+      width: 32px;
+      height: 32px;
+      margin: 0 10px 0 0;
+      border: solid 2px $color-palette1-light;
+      border-radius: 50%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &--link {
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+}
