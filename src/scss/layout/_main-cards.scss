@@ -32,9 +32,11 @@
     &__sections {
       display: flex;
       flex-direction: row-reverse;
+      &--form {
+        width: 50%;
+      }
     }
-    &__sections--form {
-      width: 57.16%;
-    }
+
+   
   }
 }
