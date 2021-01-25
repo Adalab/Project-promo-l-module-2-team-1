@@ -32,3 +32,9 @@
     width: 103px;
   }
 }
+
+@media all and (min-width: 768px) {
+  .footer .central-column {
+    padding: 0px;
+  }
+}
