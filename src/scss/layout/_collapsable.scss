@@ -1,0 +1,8 @@
+.collapsable--close {
+  .design__container {
+    display: none;
+  }
+  .fa-angle-up {
+    transform: rotate(180deg);
+  }
+}

@@ -32,11 +32,10 @@
     &__sections {
       display: flex;
       flex-direction: row-reverse;
+      justify-content: stretch;
       &--form {
         width: 50%;
       }
     }
-
-   
   }
 }
