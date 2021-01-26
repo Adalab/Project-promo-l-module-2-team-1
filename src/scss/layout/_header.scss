@@ -4,9 +4,9 @@
   justify-content: center;
   width: 100%;
   background-color: $color-background-landing;
-  height: 33.98vh;
+  height: calc(50vh - 55px);
   @media all and (min-width: 768px) {
-    height: 47.51vh;
+    height: calc(50vh - 30.5px);
   }
   &__logo {
     width: 250px;

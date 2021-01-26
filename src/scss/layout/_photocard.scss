@@ -1,5 +1,7 @@
 .photo {
-  height: 457px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   padding: 38px 35px 40px 45px;
   background-image: linear-gradient(
@@ -9,7 +11,6 @@
   );
   @media all and (min-width: 768px) {
     width: 329px;
-    height: 812px;
     padding: 223px 44px 260px 45px;
     margin: 20px 40px 20px 0;
     border-radius: 6px;
@@ -48,7 +49,6 @@
 .photocard {
   background-color: $color-background-cards;
   width: 240px;
-  height: 329px;
   border-radius: 2px;
   box-shadow: 0 1px 10px 0 $color-shadow1, 0 1px 3px $color-shadow2;
 

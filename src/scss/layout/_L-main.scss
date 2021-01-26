@@ -5,9 +5,9 @@
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  height: 46.69vh;
+  height: calc(50vh - 55px);
   @media all and (min-width: 768px) {
-    height: 46.63vh;
+    height: calc(50vh - 30.5px);
   }
   &__title {
     font-family: $font-title;

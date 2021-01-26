@@ -1,5 +1,4 @@
 .footer {
-  height: 20vh;
   border-top: solid 1px #d8d8d8;
   background: $color-background-cards;
   display: flex;
@@ -7,11 +6,10 @@
   align-items: center;
   justify-content: center;
   padding: 18px 61px 20px;
-  height: 19.33vh;
+
   @media all and (min-width: 768px) {
     flex-direction: row;
     padding: 10px 40px;
-    
   }
   &__small {
     font-family: $font-primary;
