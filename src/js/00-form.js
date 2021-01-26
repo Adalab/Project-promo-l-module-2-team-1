@@ -12,8 +12,22 @@ function handleName (ev){
       }
     }
 
-
 nameElement.addEventListener("keyup",handleName);
+
+
+const positionElement=document.querySelector (`.js-position`);
+const positionPreviewElement = document.querySelector(`.js-preview-position`);
+
+function handlePosition(ev){
+    const positionValue=ev.target.value;
+    if (positionValue === '') {
+        positionPreviewElement.innerHTML /*= 'Posicion';*/  //PREGUTTAR SI CAMBIAR EL TEXTO O DEJAR EL DEL HTML
+      } else {
+        positionPreviewElement.innerHTML = positionValue;
+      }
+    }
+
+positionElement.addEventListener("keyup",handlePosition);
 
 
 const mailElement=document.querySelector (".js-mail");
