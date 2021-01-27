@@ -1,4 +1,7 @@
 .main-cards {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(
     to bottom,
     $color-background-landing,

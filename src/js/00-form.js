@@ -21,7 +21,7 @@ const positionPreviewElement = document.querySelector(`.js-preview-position`);
 function handlePosition(ev){
     const positionValue=ev.target.value;
     if (positionValue === '') {
-        positionPreviewElement.innerHTML /*= 'Posicion';*/  //PREGUTTAR SI CAMBIAR EL TEXTO O DEJAR EL DEL HTML
+        positionPreviewElement.innerHTML = 'Front-end developer'; // Preguntar porque si ponemos otro nombre solo aparece cuando está vacio (ejemplo si es diferente al que tenemos en el html)
       } else {
         positionPreviewElement.innerHTML = positionValue;
       }
