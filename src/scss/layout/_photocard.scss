@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 38px 35px 40px 45px;
   background-image: linear-gradient(
@@ -47,6 +48,7 @@
 }
 
 .photocard {
+  align-items: center;
   background-color: $color-background-cards;
   width: 240px;
   border-radius: 2px;
