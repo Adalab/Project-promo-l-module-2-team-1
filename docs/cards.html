@@ -19,50 +19,57 @@
 <body class="page-cards">
 
     <header class="header central-column">
-      <img class="header__logo" src="./assets/images/logo-awesome.svg" alt="logo awesome cards">
+      <img class="header__logo" src="./assets/images/logo-tree4.gif" alt="logo awesome cards">
     </header>
     <main class="main-cards">
         <div class="main-cards__sections">
             <section class="photo">
+                <div class="photo-container">
+                    <div class="photo-button ">
+                        <a class="photo-button__link" href=""><i class="fa fa-trash" aria-hidden="true"></i>Reset</a>
+                    </div>
 
-                <div class="photo-button ">
-                    <a class="photo-button__link" href=""><i class="fa fa-trash" aria-hidden="true"></i>Reset</a>
+                    <article class="photocard">
+                        <div class=container>
+                            <div class=tittlescontainer>
+                                <h2 class="photocard__title js-preview-name">Nombre apellido</h2>
+                                <p class="photocard__title2 js-preview-position">Front-end developer</p>
+                            </div>
+                        </div>
+                        <img class="photocard__img"
+                            src="https://previews.123rf.com/images/creativenature/creativenature1603/creativenature160300128/54982244-hablando-de-%C3%A1rbol-con-la-cara-feliz-como-un-concepto-para-la-conciencia-ambiental.jpg"
+                            alt="" />
+                        <ul class="photocard__list">
+                            <li class="photocard__list--item">
+                                <a href="" class="photocard__list--link icon fa fa-mobile"></a>
+                            </li>
+
+                            <li class="photocard__list--item">
+                                <a href=" " class="photocard__list--link icon fa fa-envelope js-mail-icon"></a>
+                            </li>
+
+                            <li class="photocard__list--item">
+                                <a href="" class="photocard__list--link icon fa fa-linkedin"></a>
+                            </li>
+                            <li class="photocard__list--item">
+                                <a href="" class="photocard__list--link icon fa fa-github-alt"></a>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
-
-                <article class="photocard">
-                    <h2 class="photocard__title">Nombre apellido</h2>
-                    <p class="photocard__title2">Front-end developer</p>
-                    <img class="photocard__img"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5d8sIOWgK0q6qujan6wAZrnA7XY78QUm4xQ&usqp=CAU"
-                        alt="" />
-                    <ul class="photocard__list">
-                        <li class="photocard__list--item">
-                            <a href="#" class="photocard__list--link icon fa fa-envelope"></a>
-                        </li>
-                        <li class="photocard__list--item">
-                            <a href="#" class="photocard__list--link icon fa fa-mobile"></a>
-                        </li>
-                        <li class="photocard__list--item">
-                            <a href="#" class="photocard__list--link icon fa fa-linkedin"></a>
-                        </li>
-                        <li class="photocard__list--item">
-                            <a href="#" class="photocard__list--link icon fa fa-github-alt"></a>
-                        </li>
-                    </ul>
-                </article>
 
             </section>
             <form class="main-cards__sections--form">
-                <section>
-                    <h2 class="section-title">
+                <section class=" js-collapsable-container">
+                    <h2 class="section-title js-collapsable-header">
                         <div class="title-icon">
-                            <span class="article__list--icon fas fa fa-object-ungroup"></span>
+                            <span class="article__list--icon fas fa fa-object-ungroup "></span>
                             <span class="title">Diseña</span>
                         </div>
-                        <span class=""><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <span class=""><i class="fa fa-angle-up" aria-hidden="true"></i></span>
                     </h2>
 
-                    <div class="design">
+                    <div class="design design__container ">
                         <h3 class="design__title">Colores</h3>
                         <div class="design__container">
                             <div class="design__palette">
@@ -110,19 +117,21 @@
                     </div>
                 </section>
                 <section class="fill">
-                    <h2 class="section-title">
+                    <h2 class="section-title js-collapsable-header">
                         <div class="title-icon">
                             <span class="article__list--icon fas fa fa-keyboard-o"></span>
                             <span class="title">Rellena</span>
                         </div>
-                        <span class=""><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <span class=""><i class="fa fa-angle-up" aria-hidden="true"></i></span>
                     </h2>
 
                     <div class="fill__form">
                         <label class="fill__form--labels" for="fullName">Nombre completo</label>
-                        <input id="fullName" type="text" name="fullName" placeholder="Ej: Sally Jill" class="fill__form--inputs">
+                        <input id="fullName" type="text" name="fullName" placeholder="Ej: Sally Jill"
+                            class="fill__form--inputs js-name">
                         <label class="fill__form--labels" for="position">Puesto</label>
-                        <input id="position" type="text" name="position" placeholder="Ej: Front-end unicorn" class="fill__form--inputs">
+                        <input id="position" type="text" name="position" placeholder="Ej: Front-end unicorn"
+                            class="fill__form--inputs js-position">
                         <div class="fill__form--image-profile">
                             <span class="fill__form--labels">Imagen de perfil</span>
                             <div class="button-box-container">
@@ -132,7 +141,7 @@
                         </div>
                         <label class="fill__form--labels" for="">Email</label>
                         <input id="emailAddress" type="email" name="emailAddress" placeholder="Ej: sally-hill@gmail.com"
-                            class="fill__form--inputs">
+                            class="fill__form--inputs js-mail" value=" ">
                         <label class="fill__form--labels" for="telephone">Teléfono</label>
                         <input id="telephone" type="tel" name="telephone" placeholder="Ej: 555-55-55-55" class="fill__form--inputs">
                         <label class="fill__form--labels" for="linkedin">Linkedin</label>
@@ -143,40 +152,38 @@
                     </div>
 
                 </section>
-                
-                  <h2 class="section-title">
-                      <div class="title-icon">
-                          <span class="article__list--icon fas fa fa-share-alt"></span>
-                          <span class="title">Comparte</span>
-                      </div>
-                      <span class=""><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                  </h2> 
+                <h2 class="section-title js-collapsable-header">
+    <div class="title-icon">
+        <span class="article__list--icon fas fa fa-share-alt"></span>
+        <span class="title">Comparte</span>
+    </div>
+    <span class=""><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+</h2>
 
-                  <section class="sharecards"></section>
-                    <!--Share open-->
-                    
-                      <div class="section__share__container">
-                        <button class="button__create"><i class="fa fa-address-card-o" aria-hidden="true"></i>Crear tarjeta</button>
-                      </div>
-                     
-                      <div class="section__share__create hidden">
-                        <h3 class="section__share_copy">La tarjeta ha sido creada:</h3>
-                        <p class="response link_card"></p>
-                        <a class="section__twitter__button">
-                          <button class="share"><i class="fa fa-twitter" aria-hidden="true"></i> Compartir en Twitter</button>
-                        </a>
-                      </div>
+                <section class="sharecards"></section>
+                <!--Share open-->
+
+                <div class="section__share__container">
+                  <button class="button__create"><i class="fa fa-address-card-o" aria-hidden="true"></i>Crear tarjeta</button>
+                  <div class="section__share__create hidden">
+                    <h3 class="section__share_copy">La tarjeta ha sido creada:</h3>
+                    <p class="text_link_card">https://awesome-profile-card.com?id=A456DF0001</p>
+                    <a class="section__twitter__button">
+                      <button class="share"><i class="fa fa-twitter" aria-hidden="true"></i> Compartir en Twitter</button>
+                    </a>
+                  </div>
+                </div>
                 </section>
             </form>
 
         </div>
     </main>
-    <footer class="footer central-column">
+    <footer class="footer">
       <small class="footer__small">Awesome profile-cards @2021</small>
       <img class=footer__img src="./assets/images/logo-adalab.png" alt="logo adalad">
 
     </footer>
-
+    <script src="./assets/js/main.js"></script>
 
 </body>
 
