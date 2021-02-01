@@ -51,14 +51,80 @@
 .container {
   padding-top: 21px;
 }
+
 .tittlescontainer {
   border-left: solid 5px #438792;
   margin-bottom: 10px;
 }
+.palette-1 .tittlescontainer {
+  border-left: solid 5px $color-palette1-medium;
+}
+.palette-2 .tittlescontainer {
+  border-left: solid 5px $color-palette2-medium;
+}
+.palette-3 .tittlescontainer {
+  border-left: solid 5px $color-palette3-medium;
+}
+.palette-4 .tittlescontainer {
+  border-left: solid 5px $color-palette4-medium;
+}
+.palette-1 .photocard__title {
+  color: $color-palette1-dark;
+}
+.palette-2 .photocard__title {
+  color: $color-palette2-dark;
+}
+.palette-3 .photocard__title {
+  color: $color-palette3-dark;
+}
+.palette-4 .photocard__title {
+  color: $color-palette4-dark;
+}
+/*job*/
+.palette-1 .photocard__title2 {
+  color: $color-palette1-dark;
+}
+.palette-2 .photocard__title2 {
+  color: $color-palette2-dark;
+}
+.palette-3 .photocard__title2 {
+  color: $color-palette3-dark;
+}
+.palette-4 .photocard__title2 {
+  color: $color-palette4-dark;
+}
+
+/*item - circulo*/
+.palette-1 .photocard__list--item {
+  border: solid 2px $color-palette1-light;
+}
+.palette-2 .photocard__list--item {
+  border: solid 2px $color-palette2-light;
+}
+.palette-3 .photocard__list--item {
+  border: solid 2px $color-palette3-light;
+}
+.palette-4 .photocard__list--item {
+  border: solid 2px $color-palette4-light;
+}
+
+/*link*/
+.palette-1 .photocard__list--link {
+  color: $color-palette1-dark;
+}
+.palette-2 .photocard__list--link {
+  color: $color-palette2-dark;
+}
+.palette-3 .photocard__list--link {
+  color: $color-palette3-dark;
+}
+.palette-4 .photocard__list--link {
+  color: $color-palette4-dark;
+}
 
 .photocard {
   align-items: center;
-  background-color: $color-background-cards;
+  background-color: $color-background-landing;
   width: 240px;
   border-radius: 2px;
   box-shadow: 0 1px 10px 0 $color-shadow1, 0 1px 3px $color-shadow2;
@@ -72,6 +138,7 @@
     font-weight: bold;
     font-family: $font-cards;
   }
+
   &__title2 {
     font-family: $font-cards;
     font-size: 16px;
