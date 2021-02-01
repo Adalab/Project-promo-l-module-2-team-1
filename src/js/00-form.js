@@ -38,7 +38,7 @@ function handleMail (ev){
   if (mailValue === " ") {
       mailElement.value = "Este campo es obligatorio";
       } else { 
-        mailPreviewElement.href =( `mailto: ${mailValue}`);
+        mailPreviewElement.href =(`mailto:${mailValue}`);
       }
     }
 
