@@ -31,39 +31,47 @@
     }
   }
 }
-.color1 {
-  background-color: $color-palette1-dark;
+.palette-1 {
+  .color1 {
+    background-color: $color-palette1-dark;
+  }
+  .color2 {
+    background-color: $color-palette1-medium;
+  }
+  .color3 {
+    background-color: $color-palette1-light;
+  }
 }
-.color2 {
-  background-color: $color-palette1-medium;
+.palette-2 {
+  .color1 {
+    background-color: $color-palette2-dark;
+  }
+  .color2 {
+    background-color: $color-palette2-medium;
+  }
+  .color3 {
+    background-color: $color-palette2-light;
+  }
 }
-.color3 {
-  background-color: $color-palette1-light;
+.palette-3 {
+  .color1 {
+    background-color: $color-palette3-dark;
+  }
+  .color2 {
+    background-color: $color-palette3-medium;
+  }
+  .color3 {
+    background-color: $color-palette3-light;
+  }
 }
-.color4 {
-  background-color: $color-palette2-dark;
-}
-.color5 {
-  background-color: $color-palette2-medium;
-}
-.color6 {
-  background-color: $color-palette2-light;
-}
-.color7 {
-  background-color: $color-palette3-dark;
-}
-.color8 {
-  background-color: $color-palette3-medium;
-}
-.color9 {
-  background-color: $color-palette3-light;
-}
-.color10 {
-  background-color: $color-palette4-dark;
-}
-.color11 {
-  background-color: $color-palette4-medium;
-}
-.color12 {
-  background-color: $color-palette4-light;
+.palette-4 {
+  .color1 {
+    background-color: $color-palette4-dark;
+  }
+  .color2 {
+    background-color: $color-palette4-medium;
+  }
+  .color3 {
+    background-color: $color-palette4-light;
+  }
 }
