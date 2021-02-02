@@ -1,16 +1,26 @@
-<include src="./sections-cards-header.html" icon="fa fa-share-alt" aria-hidden="true" title="Comparte"></include>
+<section class="sharecards js-collapsable-container">
+  <include
+    src="./sections-cards-header.html"
+    icon="fa fa-share-alt"
+    aria-hidden="true"
+    title="Comparte"
+  ></include>
+  <!--Share open-->
 
-<section class="sharecards"></section>
-<!--Share open-->
-
-<div class="section__share__container">
-  <button class="button__create"><i class="fa fa-address-card-o" aria-hidden="true"></i>Crear tarjeta</button>
-  <div class="section__share__create hidden">
-    <h3 class="section__share_copy">La tarjeta ha sido creada:</h3>
-    <p class="text_link_card">https://awesome-profile-card.com?id=A456DF0001</p>
-    <a class="section__twitter__button">
-      <button class="share"><i class="fa fa-twitter" aria-hidden="true"></i> Compartir en Twitter</button>
-    </a>
+  <div class="section__share__container hidden__container">
+    <button class="button__create">
+      <i class="fa fa-address-card-o" aria-hidden="true"></i>Crear tarjeta
+    </button>
+    <div class="section__share__create hidden">
+      <h3 class="section__share_copy">La tarjeta ha sido creada:</h3>
+      <p class="text_link_card">
+        https://awesome-profile-card.com?id=A456DF0001
+      </p>
+      <a class="section__twitter__button">
+        <button class="share">
+          <i class="fa fa-twitter" aria-hidden="true"></i> Compartir en Twitter
+        </button>
+      </a>
+    </div>
   </div>
-</div>
 </section>
