@@ -50,76 +50,76 @@
 /* PARA EL SIGUIENTE REVIEW MEJORAR ESTO, CON UN SOLO DIV, PREGUNTAR EL POR QUÉ DEL MARGEN */
 .container {
   padding-top: 21px;
+  padding-bottom: 10px;
 }
 
-.tittlescontainer {
-  border-left: solid 5px #438792;
-  margin-bottom: 10px;
+.palette-1 {
+  .tittlescontainer {
+    border-left: solid 5px $color-palette1-medium;
+  }
+  .photocard__title {
+    color: $color-palette1-dark;
+  }
+  .photocard__title2 {
+    color: $color-palette1-dark;
+  }
+  .photocard__list--item {
+    border: solid 2px $color-palette1-light;
+  }
+  .photocard__list--link {
+    color: $color-palette1-dark;
+  }
 }
-.palette-1 .tittlescontainer {
-  border-left: solid 5px $color-palette1-medium;
+.palette-2 {
+  .tittlescontainer {
+    border-left: solid 5px $color-palette2-medium;
+  }
+  .photocard__title {
+    color: $color-palette2-dark;
+  }
+  .photocard__title2 {
+    color: $color-palette2-dark;
+  }
+  .photocard__list--link {
+    color: $color-palette2-dark;
+  }
+  .photocard__list--item {
+    border: solid 2px $color-palette2-light;
+  }
 }
-.palette-2 .tittlescontainer {
-  border-left: solid 5px $color-palette2-medium;
+.palette-3 {
+  .tittlescontainer {
+    border-left: solid 5px $color-palette3-medium;
+  }
+  .photocard__title {
+    color: $color-palette3-dark;
+  }
+  .photocard__title2 {
+    color: $color-palette3-dark;
+  }
+  .photocard__list--item {
+    border: solid 2px $color-palette3-light;
+  }
+  .photocard__list--link {
+    color: $color-palette3-dark;
+  }
 }
-.palette-3 .tittlescontainer {
-  border-left: solid 5px $color-palette3-medium;
-}
-.palette-4 .tittlescontainer {
-  border-left: solid 5px $color-palette4-medium;
-}
-.palette-1 .photocard__title {
-  color: $color-palette1-dark;
-}
-.palette-2 .photocard__title {
-  color: $color-palette2-dark;
-}
-.palette-3 .photocard__title {
-  color: $color-palette3-dark;
-}
-.palette-4 .photocard__title {
-  color: $color-palette4-dark;
-}
-/*job*/
-.palette-1 .photocard__title2 {
-  color: $color-palette1-dark;
-}
-.palette-2 .photocard__title2 {
-  color: $color-palette2-dark;
-}
-.palette-3 .photocard__title2 {
-  color: $color-palette3-dark;
-}
-.palette-4 .photocard__title2 {
-  color: $color-palette4-dark;
-}
-
-/*item - circulo*/
-.palette-1 .photocard__list--item {
-  border: solid 2px $color-palette1-light;
-}
-.palette-2 .photocard__list--item {
-  border: solid 2px $color-palette2-light;
-}
-.palette-3 .photocard__list--item {
-  border: solid 2px $color-palette3-light;
-}
-.palette-4 .photocard__list--item {
-  border: solid 2px $color-palette4-light;
-}
-
-/*link*/
-.palette-1 .photocard__list--link {
-  color: $color-palette1-dark;
-}
-.palette-2 .photocard__list--link {
-  color: $color-palette2-dark;
-}
-.palette-3 .photocard__list--link {
-  color: $color-palette3-dark;
-}
-.palette-4 .photocard__list--link {
-  color: $color-palette4-dark;
+.palette-4 {
+  .tittlescontainer {
+    border-left: solid 5px $color-palette4-medium;
+  }
+  .photocard__title {
+    color: $color-palette4-dark;
+  }
+  .photocard__title2 {
+    color: $color-palette4-dark;
+  }
+  .photocard__list--item {
+    border: solid 2px $color-palette4-light;
+  }
+  .photocard__list--link {
+    color: $color-palette4-dark;
+  }
 }
 
 .photocard {
@@ -132,7 +132,6 @@
   &__title {
     padding: 0 14px 0 15px;
     font-size: 18px;
-    color: $color-primary;
     text-transform: capitalize;
     line-height: 1.11;
     font-weight: bold;
@@ -143,7 +142,6 @@
     font-family: $font-cards;
     font-size: 16px;
     line-height: 1.25;
-    color: $color-secondary;
     padding: 0 52px 0 15px;
   }
   &__img {
@@ -160,7 +158,6 @@
       margin: 0 10px 0 0;
       border: solid 2px $color-palette1-light;
       border-radius: 50%;
-
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -168,7 +165,6 @@
     }
     &--link {
       text-decoration: none;
-      color: $color-primary;
     }
   }
 }
