@@ -1,7 +1,7 @@
 `use strict`;
 
 //Traer el elemento del html//
-debugger;
+
 const collapsableHeaders = document.querySelectorAll(".js-collapsable-header");
 for (const collapsableHeader of collapsableHeaders) {
   collapsableHeader.addEventListener("click", changeCollapsable);
@@ -32,16 +32,3 @@ function changeCollapsable(ev) {
   }
 }
 
-const designCollapsableContainer = document.querySelectorAll(
-  ".js-collapsable-container"
-);
-
-function handleCollapsable(ev) {
-  console.log("Me han clickado");
-  designCollapsableContainer.classList.toggle("collapsable--close");
-
-  ev.currentTarget.parentNode.querySelector(".js-container");
-}
-for (const collapsableElements of designCollapsableContainer) {
-  collapsableElements.addEventListener("click", handleCollapsable);
-}
