@@ -147,7 +147,10 @@
   &__img {
     width: 240px;
     height: 200px;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../images/photo-preview1.jpg");
+    background-repeat: no-repeat;
   }
   &__list {
     display: flex;

@@ -6,6 +6,8 @@ const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
 
+let photo = '';
+
 /**
  * Recoge el archivo añadido al campo de tipo "file"
  * y lo carga en nuestro objeto FileReader para que
@@ -31,18 +33,23 @@ function writeImage() {
    * podemos pasarlo como background a la imagen de perfil y a la vista previa
    * de nuestro componente.
    */
-
-  console.log(fr.result);
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
-  profileImage.style.backgroundImage = `url(${fr.result})`;
 }
+  console.log(fr.result);
+  photo = fr.result;
+  function updatePhoto() {
+    const currentPhoto = photo || 'url(../images/photo-preview1.jpg)';
+    profilePreview.style.backgroundImage = `url(${currentPhoto})`;
+    profileImage.style.backgroundImage = `url(${currentPhoto})`;
+  }
 
+
+  
 /**
  * Genera un click automático en nuesto campo de tipo "file"
  * que está oculto
  */
-function fakeFileClick() {
-   
+function fakeFileClick(ev) {
+  ev.preventDefault();
   fileField.click();
 }
 
