@@ -15,9 +15,6 @@
     padding: 0px 44px 260px 45px;
     margin: 20px 40px 20px 0;
     border-radius: 6px;
-    /* .photo-container {
-      margin-top: 173px;
-    }*/
   }
 
   @media all and (min-width: 1024px) {
@@ -47,12 +44,10 @@
 .fa-trash {
   padding-right: 8px;
 }
-/* PARA EL SIGUIENTE REVIEW MEJORAR ESTO, CON UN SOLO DIV, PREGUNTAR EL POR QUÉ DEL MARGEN */
 .container {
   padding-top: 21px;
   padding-bottom: 10px;
 }
-
 .palette-1 {
   .tittlescontainer {
     border-left: solid 5px $color-palette1-medium;

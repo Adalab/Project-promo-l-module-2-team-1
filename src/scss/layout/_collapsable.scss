@@ -1,8 +1,29 @@
 .collapsable--close {
   .hidden__container {
     display: none;
+    animation: intro;
   }
-  .fa-angle-up {
-    transform: rotate(180deg);
+  .fa-leaf {
+    animation: intro;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
+}
+
+//Animación (esta o similar) a modo de sugerencia
+/* .fa {
+  animation: intro;
+  animation-timing-function: ease 2;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+} */
+
+@keyframes intro {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
