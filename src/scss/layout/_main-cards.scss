@@ -12,6 +12,7 @@
   margin: 0 19px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .title {
@@ -28,6 +29,10 @@
 
 .fa {
   font-size: 18px;
+}
+
+.fa-leaf {
+  color: $color-primary;
 }
 
 @media all and (min-width: 768px) {
