@@ -24,35 +24,34 @@
     <main class="main-cards">
         <div class="main-cards__sections">
             <section class="photo">
+
                 <div class="photo-container">
                     <div class="photo-button ">
                         <a class="photo-button__link" href=""><i class="fa fa-trash" aria-hidden="true"></i>Reset</a>
                     </div>
 
-                    <article class="photocard">
-                        <div class=container>
-                            <div class=tittlescontainer>
-                                <h2 class="photocard__title js-preview-name">Nombre apellido</h2>
-                                <p class="photocard__title2 js-preview-position">Front-end developer</p>
+                    <article class="photocard js-card palette-1">
+                        <div class="container">
+                            <div class="tittlescontainer">
+                                <h2 class="photocard__title js-preview-name js-card-name">Nombre apellido</h2>
+                                <p class="photocard__title2 js-preview-position js-card-job">Front-end developer</p>
                             </div>
                         </div>
-                        <img class="photocard__img"
-                            src="https://previews.123rf.com/images/creativenature/creativenature1603/creativenature160300128/54982244-hablando-de-%C3%A1rbol-con-la-cara-feliz-como-un-concepto-para-la-conciencia-ambiental.jpg"
-                            alt="" />
+                        <div class="photocard__img js__profile-image"></div>
                         <ul class="photocard__list">
                             <li class="photocard__list--item">
-                                <a href="" class="photocard__list--link icon fa fa-mobile"></a>
+                                <a href="" class="photocard__list--link icon fa fa-mobile js-card-phone"></a>
                             </li>
 
                             <li class="photocard__list--item">
-                                <a href=" " class="photocard__list--link icon fa fa-envelope js-mail-icon"></a>
+                                <a href=" " class="photocard__list--link icon fa fa-envelope js-card-email"></a>
                             </li>
 
                             <li class="photocard__list--item">
-                                <a href="" class="photocard__list--link icon fa fa-linkedin"></a>
+                                <a href="" class="photocard__list--link js-card-linkedin icon fa fa-linkedin "></a>
                             </li>
                             <li class="photocard__list--item">
-                                <a href="" class="photocard__list--link icon fa fa-github-alt"></a>
+                                <a href="" class="photocard__list--link js-card-github icon fa fa-github-alt "></a>
                             </li>
                         </ul>
                     </article>
@@ -66,16 +65,16 @@
                             <span class="article__list--icon fas fa fa-object-ungroup "></span>
                             <span class="title">Diseña</span>
                         </div>
-                        <span class=""><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+                        <span class=""><i class="fa fa-leaf" aria-hidden="true"></i></span>
                     </h2>
 
-                    <div class="design design__container ">
+                    <div class="design hidden__container ">
                         <h3 class="design__title">Colores</h3>
-                        <div class="design__container">
+                        <div>
                             <div class="design__palette">
                                 <label class="design__label">
-                                    <input class=" design__radio" bh type="radio" name="palette" />
-                                    <ul class="design__square">
+                                    <input class=" design__radio js-palette" type="radio" name="palette" value="1" checked />
+                                    <ul class="design__square palette-1">
                                         <li class="design__square--color color1">Color 1</li>
                                         <li class="design__square--color color2">Color 2</li>
                                         <li class="design__square--color color3">Color 3</li>
@@ -84,105 +83,121 @@
                             <div class="design__palette">
                                 </label>
                                 <label class="design__label">
-                                    <input class=" design__radio" type="radio" name="palette" />
-                                    <ul class="design__square">
-                                        <li class="design__square--color color 4">Color 1</li>
-                                        <li class="design__square--color color5">Color 2</li>
-                                        <li class="design__square--color color6">Color 3</li>
+                                    <input class=" design__radio js-palette" type="radio" name="palette" value="2" />
+                                    <ul class="design__square palette-2">
+                                        <li class="design__square--color color1">Color 1</li>
+                                        <li class="design__square--color color2">Color 2</li>
+                                        <li class="design__square--color color3">Color 3</li>
                                     </ul>
                             </div>
                             <div class="design__palette">
                                 </label>
                                 <label class="design__label">
-                                    <input class=" design__radio" type="radio" name="palette" />
-                                    <ul class="design__square">
-                                        <li class="design__square--color color7 ">Color 1</li>
-                                        <li class="design__square--color color8">Color 2</li>
-                                        <li class="design__square--color color9">Color 3</li>
+                                    <input class=" design__radio js-palette" type="radio" name="palette" value="3" />
+                                    <ul class="design__square  palette-3">
+                                        <li class="design__square--color color1">Color 1</li>
+                                        <li class="design__square--color color2">Color 2</li>
+                                        <li class="design__square--color color3">Color 3</li>
                                     </ul>
                                 </label>
                             </div>
                             <div class="design__palette">
                                 </label>
                                 <label class="design__label">
-                                    <input class=" design__radio" type="radio" name="palette" />
-                                    <ul class="design__square">
-                                        <li class="design__square--color color10 ">Color 1</li>
-                                        <li class="design__square--color color11">Color 2</li>
-                                        <li class="design__square--color color12">Color 3</li>
+                                    <input class=" design__radio js-palette" type="radio" name="palette" value="4" />
+                                    <ul class="design__square palette-4">
+                                        <li class="design__square--color color1">Color 1</li>
+                                        <li class="design__square--color color2">Color 2</li>
+                                        <li class="design__square--color color3">Color 3</li>
                                     </ul>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="fill">
+                <section class="fill js-collapsable-container">
                     <h2 class="section-title js-collapsable-header">
                         <div class="title-icon">
                             <span class="article__list--icon fas fa fa-keyboard-o"></span>
                             <span class="title">Rellena</span>
                         </div>
-                        <span class=""><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+                        <span class=""><i class="fa fa-leaf" aria-hidden="true"></i></span>
                     </h2>
 
-                    <div class="fill__form">
-                        <label class="fill__form--labels" for="fullName">Nombre completo</label>
+                    <div class="hidden__container fill__form">
+                        <label class="fill__form--labels" for="fullName">Nombre completo*</label>
                         <input id="fullName" type="text" name="fullName" placeholder="Ej: Sally Jill"
-                            class="fill__form--inputs js-name">
-                        <label class="fill__form--labels" for="position">Puesto</label>
+                            class="fill__form--inputs js-name js-input-name js-input-text" required>
+                        <label class="fill__form--labels" for="position">Puesto*</label>
                         <input id="position" type="text" name="position" placeholder="Ej: Front-end unicorn"
-                            class="fill__form--inputs js-position">
+                            class="fill__form--inputs js-position js-input-job js-input-text" required>
                         <div class="fill__form--image-profile">
-                            <span class="fill__form--labels">Imagen de perfil</span>
+                            <span class="fill__form--labels">Imagen de perfil*</span>
+
                             <div class="button-box-container">
-                                <button class="fill__form--button">Añadir imagen</button>
-                                <span class="fill__form--box"></span>
+                                <button class="fill__form--button js__profile-trigger">Añadir imagen</button>
+                                <input type="file" name="" id="" class="js__profile-upload-btn" />
+                                <span class="fill__form--box js__profile-preview"></span>
                             </div>
                         </div>
-                        <label class="fill__form--labels" for="">Email</label>
+                        <label class="fill__form--labels" for="">Email*</label>
                         <input id="emailAddress" type="email" name="emailAddress" placeholder="Ej: sally-hill@gmail.com"
-                            class="fill__form--inputs js-mail" value=" ">
-                        <label class="fill__form--labels" for="telephone">Teléfono</label>
-                        <input id="telephone" type="tel" name="telephone" placeholder="Ej: 555-55-55-55" class="fill__form--inputs">
-                        <label class="fill__form--labels" for="linkedin">Linkedin</label>
-                        <input id="linkedin" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill"
-                            class="fill__form--inputs">
-                        <label class="fill__form--labels" for="github">Github</label>
-                        <input id="github" type="text" name="github" placeholder="Ej: @sally-hill" class="fill__form--inputs">
+                            class="fill__form--inputs js-input-email js-input-text" value=" " required>
+                        <label class="fill__form--labels" for="telephone">Teléfono*</label>
+                        <input id="telephone" type="tel" name="telephone" placeholder="Ej: 555-55-55-55"
+                            class="fill__form--inputs js-input-phone js-input-text" required>
+
+                        <label class="fill__form--labels" for="linkedin">Linkedin*</label>
+                        <input id="linkedin" type="url" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill"
+                            class="fill__form--inputs js-input-linkedin js-input-text" required>
+
+                        <label class="fill__form--labels" for="github">Github*</label>
+                        <input id="github" type="url" name="github" placeholder="Ej: @sally-hill"
+                            class="fill__form--inputs js-input-github js-input-text " required>
                     </div>
 
                 </section>
-                <h2 class="section-title js-collapsable-header">
-    <div class="title-icon">
-        <span class="article__list--icon fas fa fa-share-alt"></span>
-        <span class="title">Comparte</span>
-    </div>
-    <span class=""><i class="fa fa-angle-up" aria-hidden="true"></i></span>
-</h2>
+                <section class="sharecards js-collapsable-container">
+                  <h2 class="section-title js-collapsable-header">
+                      <div class="title-icon">
+                          <span class="article__list--icon fas fa fa-share-alt"></span>
+                          <span class="title">Comparte</span>
+                      </div>
+                      <span class=""><i class="fa fa-leaf" aria-hidden="true"></i></span>
+                  </h2>
+                  <!--Share open-->
 
-                <section class="sharecards"></section>
-                <!--Share open-->
-
-                <div class="section__share__container">
-                  <button class="button__create"><i class="fa fa-address-card-o" aria-hidden="true"></i>Crear tarjeta</button>
-                  <div class="section__share__create hidden">
-                    <h3 class="section__share_copy">La tarjeta ha sido creada:</h3>
-                    <p class="text_link_card">https://awesome-profile-card.com?id=A456DF0001</p>
-                    <a class="section__twitter__button">
-                      <button class="share"><i class="fa fa-twitter" aria-hidden="true"></i> Compartir en Twitter</button>
-                    </a>
+                  <div class="section__share__container hidden__container">
+                    <button class="button__create">
+                      <i class="fa fa-address-card-o" aria-hidden="true"></i>Crear tarjeta
+                    </button>
+                    <div class="section__share__create hidden">
+                      <h3 class="section__share_copy">La tarjeta ha sido creada:</h3>
+                      <p class="text_link_card">
+                        https://awesome-profile-card.com?id=A456DF0001
+                      </p>
+                      <a class="section__twitter__button">
+                        <button class="share">
+                          <i class="fa fa-twitter" aria-hidden="true"></i> Compartir en Twitter
+                        </button>
+                      </a>
+                    </div>
                   </div>
-                </div>
                 </section>
+
             </form>
 
         </div>
     </main>
     <footer class="footer">
-      <small class="footer__small">Awesome profile-cards @2021</small>
-      <img class=footer__img src="./assets/images/logo-adalab.png" alt="logo adalad">
-
+      <small class="footer__small">Tree profile-cards @2021</small>
+      <img
+        class="footer__img"
+        src="./assets/images/logo-adalab.png"
+        alt="logo adalad"
+      />
     </footer>
+
     <script src="./assets/js/main.js"></script>
 
 </body>
