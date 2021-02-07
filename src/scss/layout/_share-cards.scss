@@ -1,9 +1,8 @@
-
 .section__share__container {
   border-bottom: 1px orange;
   text-align: center;
-  
-    .button__create {
+
+  .button__create {
     margin-top: 20px;
     width: 199px;
     height: 50px;
@@ -31,13 +30,13 @@
       color: #ffffff;
       margin-right: 9px;
     }
-      &disabled {
+    &disabled {
       background-color: gray;
       border: 1px solid gray;
       cursor: not-allowed;
     }
   }
-          
+
   & .button__share {
     width: 181px;
     height: 30px;
@@ -58,7 +57,6 @@
     justify-content: space-around;
     align-items: center;
   }
-  
 }
 
 .section__share__create {
@@ -69,7 +67,6 @@
   border-top: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
   align-items: center;
-
 }
 .section__share_copy {
   margin: 20px 0 5px 0;
@@ -77,31 +74,31 @@
   font-size: 18px;
   letter-spacing: normal;
   text-align: center;
-  color:$color-secondary;
-
+  color: $color-secondary;
 }
 .text_link_card {
-font-family:$font-primary, SemiBold;
-color: $color-icons ;
-font-size: 12px;
-width: 300px;
-
-
+  font-family: $font-primary, SemiBold;
+  color: $color-icons;
+  font-size: 12px;
+  width: 300px;
 }
 
-
 .share {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #00a0f5;
-    font-family: $font-primary;
-    font-size: 14px;
-    color: $color-background-cards;
-    width: 181px;
-    height: 30px;
-    margin: 10px 0 30px 0;
-    border-radius: 3px;
-    border: transparent;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00a0f5;
+  font-family: $font-primary;
+  font-size: 14px;
+  color: $color-background-cards;
+  width: 181px;
+  height: 30px;
+  margin: 10px 0 30px 0;
+  border-radius: 3px;
+  border: transparent;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+}
+
+.hidden {
+  display: none;
 }

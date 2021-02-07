@@ -33,13 +33,16 @@ function writeImage() {
    * podemos pasarlo como background a la imagen de perfil y a la vista previa
    * de nuestro componente.
    */
+  photo = fr.result;
+  updatePhoto();
+  saveInLocalStorage();
 }
-console.log(fr.result);
-photo = fr.result;
+
 function updatePhoto() {
   const currentPhoto = photo || "url(../images/photo-preview1.jpg)";
   profilePreview.style.backgroundImage = `url(${currentPhoto})`;
   profileImage.style.backgroundImage = `url(${currentPhoto})`;
+
   //meter un saveInLocalStorage??? PREGUNTAR
 }
 
