@@ -1,4 +1,4 @@
-'user strict';
+"user strict";
 
 const resetButtonElement = document.querySelector(".js-reset");
 

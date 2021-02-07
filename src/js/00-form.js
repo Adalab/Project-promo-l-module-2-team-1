@@ -11,7 +11,7 @@ const inputsTextConfig = [
   {
     inputClass: ".js-input-job",
     cardClass: ".js-card-job",
-    defaultValue: "DEVELOPER",
+    defaultValue: "Developer",
     cardPrefix: "",
     cardElementAttribute: "innerHTML",
   },
@@ -107,5 +107,3 @@ for (const inputTextElement of inputTextElements) {
 }
 // al arrancar la página proceso todos los inputs
 // como updateAllInputs no recibe eventos puedo ejecutar esta función al inicio, tras un evento de usuaria o cuando me de la real gana!!!
-
-
