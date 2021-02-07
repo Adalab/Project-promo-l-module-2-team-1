@@ -30,15 +30,24 @@
   border: solid 1px $color-background-cards;
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   font-size: 12px;
+
   &__link {
+    background-color: transparent;
+    border: 0;
     text-decoration: none;
     text-transform: uppercase;
     font-family: $font-primary;
     color: $color-secondary;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 .fa-trash {
