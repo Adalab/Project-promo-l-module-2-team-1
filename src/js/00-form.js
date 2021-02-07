@@ -19,7 +19,7 @@ const inputsTextConfig = [
     inputClass: ".js-input-email",
     cardClass: ".js-card-email",
     defaultValue: "",
-    cardPrefix: "mailto: ",
+    cardPrefix: "mailto:",
     cardElementAttribute: "href",
   },
   {
@@ -108,23 +108,4 @@ for (const inputTextElement of inputTextElements) {
 // al arrancar la página proceso todos los inputs
 // como updateAllInputs no recibe eventos puedo ejecutar esta función al inicio, tras un evento de usuaria o cuando me de la real gana!!!
 
-const resetButtonElement = document.querySelector(".js-reset");
-function resetInfo() {
-  localStorage.clear("userData");
-  const allInputsData = document.querySelectorAll(".js-input-text");
-  for (const allInputsDataoff of allInputsData) {
-    allInputsDataoff.value = "";
-  }
-  /*   document.querySelector(".js-palette1").checked = true;
-  cardElement.classList.remove("js-card-palette2");
-  cardElement.classList.remove("js-card-palette3");
-  cardElement.classList.add("js-card-palette1");
-  localStorage.removeItem("data");
-  profileImage.style.backgroundImage = `url(${currentPhoto})`;
-  profilePreview.style.backgroundImage = `url(${currentPhoto})`;
-  shareFormLink.innerHTML = "";
-  createLink.classList.add("show");
-  shareButton.setAttribute("disabled", "false");
-  shareButton.classList.remove("disabled"); */
-}
-resetButtonElement.addEventListener("click", resetInfo);
+
