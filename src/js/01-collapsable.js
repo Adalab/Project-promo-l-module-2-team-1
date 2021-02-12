@@ -32,3 +32,18 @@ function changeCollapsable(ev) {
   }
 }
 
+// const hiddenButton = document.querySelector (".js-hidden");
+
+// function handleHiddenButton {
+//   const hiddenCollapsableButton = document.querySelector (".js-hidden-collapsable");
+//   if (clickedCollapsable === collapsable) {
+//     // si es el pulsado, le hago un toggle
+//     collapsable.classList.toggle("collapsable--close");
+//   } else {
+//     // si no es el pulsado, lo cierro
+//     collapsable.classList.add("collapsable--close");
+//   }
+
+// }
+
+// hiddenButton.addEventListener("click", handleHiddenButton);

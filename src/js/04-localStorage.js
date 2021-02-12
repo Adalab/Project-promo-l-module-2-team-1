@@ -18,9 +18,8 @@ Recuperar del local storage:
 */
 
 // cuando la usuaria cambia cualquier cosa en el formulario debemos llamar a esta función
-function saveInLocalStorage() {
-  // obtengo los valores de todos los campos
-  const userData = {
+function getUserData() {
+  return {
     photo: photo,
     palette: parseInt(document.querySelector(".js-palette:checked").value),
     name: document.querySelector(".js-input-name").value,
@@ -30,7 +29,11 @@ function saveInLocalStorage() {
     linkedin: document.querySelector(".js-input-linkedin").value,
     github: document.querySelector(".js-input-github").value,
   };
+}
+// cuando la usuaria cambia cualquier cosa en el formulario debemos llamar a esta función
+function saveInLocalStorage() {
   // lo convierto a string porque local storage solo admite strings
+  const userData = getUserData();
   const userDataInString = JSON.stringify(userData);
   // lo guardo en el local storage en el campo que me apetece
   localStorage.setItem("userData", userDataInString);
