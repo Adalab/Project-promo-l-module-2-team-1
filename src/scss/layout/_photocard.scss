@@ -61,6 +61,15 @@
   .tittlescontainer {
     border-left: solid 5px $color-palette1-medium;
   }
+  .photocard__list {
+    background-color: $color-background1;
+  }
+  .container {
+    background-color: $color-background1;
+  }
+  .photocard__img {
+    background-color: $color-background1;
+  }
   .photocard__title {
     color: $color-palette1-dark;
   }
@@ -68,7 +77,7 @@
     color: $color-palette1-dark;
   }
   .photocard__list--item {
-    border: solid 2px $color-palette1-light;
+    border: solid 2px $color-palette1-medium;
   }
   .photocard__list--link {
     color: $color-palette1-dark;
@@ -78,17 +87,26 @@
   .tittlescontainer {
     border-left: solid 5px $color-palette2-medium;
   }
+  .photocard__list {
+    background-color: $color-background2;
+  }
+  .container {
+    background-color: $color-background2;
+  }
   .photocard__title {
     color: $color-palette2-dark;
   }
   .photocard__title2 {
     color: $color-palette2-dark;
   }
+  .photocard__img {
+    background-color: $color-background2;
+  }
   .photocard__list--link {
     color: $color-palette2-dark;
   }
   .photocard__list--item {
-    border: solid 2px $color-palette2-light;
+    border: solid 2px $color-palette2-medium;
   }
 }
 .palette-3 {
@@ -101,8 +119,17 @@
   .photocard__title2 {
     color: $color-palette3-dark;
   }
+  .photocard__list {
+    background-color: $color-background3;
+  }
+  .photocard__img {
+    background-color: $color-background3;
+  }
+  .container {
+    background-color: $color-background3;
+  }
   .photocard__list--item {
-    border: solid 2px $color-palette3-light;
+    border: solid 2px $color-palette3-medium;
   }
   .photocard__list--link {
     color: $color-palette3-dark;
@@ -115,11 +142,20 @@
   .photocard__title {
     color: $color-palette4-dark;
   }
+  .photocard__img {
+    background-color: $color-background4;
+  }
   .photocard__title2 {
     color: $color-palette4-dark;
   }
   .photocard__list--item {
-    border: solid 2px $color-palette4-light;
+    border: solid 2px $color-palette4-medium;
+  }
+  .photocard__list {
+    background-color: $color-background4;
+  }
+  .container {
+    background-color: $color-background4;
   }
   .photocard__list--link {
     color: $color-palette4-dark;
