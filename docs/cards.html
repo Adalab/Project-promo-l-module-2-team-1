@@ -27,32 +27,32 @@
 
                 <div class="photo-container">
                     <div class="photo-button ">
-                        <input class="photo-button__link js-reset" type="reset" value="Reset">
+                        <button class="photo-button__link js-reset">Reset</button>
                         <i class="fa fa-trash" aria-hidden="true"></i>
                     </div>
 
                     <article class="photocard js-card palette-1">
                         <div class="container">
                             <div class="tittlescontainer">
-                                <h2 class=" photocard__title js-preview-name js-card-name ">Nombre apellido</h2>
-                                <p class=" photocard__title2 js-preview-position js-card-job">Front-end developer</p>
+                                <h2 class=" photocard__title js-preview-name js-card-name js-input-text">Nombre apellido</h2>
+                                <p class=" photocard__title2 js-preview-position js-card-job js-input-text">Front-end developer</p>
                             </div>
                         </div>
                         <div class="photocard__img js__profile-image"></div>
                         <ul class="photocard__list">
                             <li class="photocard__list--item">
-                                <a href="" class=" photocard__list--link icon fa fa-mobile js-card-phone"></a>
+                                <a href="" class=" photocard__list--link icon fa fa-mobile js-card-phone  js-input-text"></a>
                             </li>
 
                             <li class="photocard__list--item">
-                                <a href="" class=" photocard__list--link icon fa fa-envelope js-card-email"></a>
+                                <a href="" class=" photocard__list--link icon fa fa-envelope js-card-email  js-input-text"></a>
                             </li>
 
                             <li class="photocard__list--item">
-                                <a href="" class=" photocard__list--link js-card-linkedin icon fa fa-linkedin "></a>
+                                <a href="" class=" photocard__list--link js-card-linkedin icon fa fa-linkedin  js-input-text"></a>
                             </li>
                             <li class="photocard__list--item">
-                                <a href="" class=" photocard__list--link js-card-github icon fa fa-github-alt "></a>
+                                <a href="" class=" photocard__list--link js-card-github icon fa fa-github-alt  js-input-text"></a>
                             </li>
                         </ul>
                     </article>
@@ -74,7 +74,8 @@
                         <div>
                             <div class="design__palette">
                                 <label class="design__label">
-                                    <input class=" design__radio js-palette" type="radio" name="palette" value="1" checked />
+                                    <input class=" design__radio js-palette js-paletteDefault" type="radio" name="palette" value="1"
+                                        checked />
                                     <ul class="design__square palette-1">
                                         <li class="design__square--color color1">Color 1</li>
                                         <li class="design__square--color color2">Color 2</li>
@@ -169,11 +170,13 @@
                   <!--Share open-->
 
                   <div class="section__share__container hidden__container">
-                    <button class="button__create">
+                    <button
+                      class="button__create js-create-btn js-collapsable-container js-hidden"
+                    >
                       <i class="fa fa-address-card-o" aria-hidden="true"></i>Crear tarjeta
                     </button>
 
-                    <div class="section__share__create hidden">
+                    <div class="section__share__create js-card-result js-hidden-collapsable">
                       <h3 class="section__share_copy">La tarjeta ha sido creada:</h3>
                       <p class="text_link_card">
                         https://awesome-profile-card.com?id=A456DF0001
@@ -186,6 +189,7 @@
                     </div>
                   </div>
                 </section>
+
             </form>
 
         </div>
