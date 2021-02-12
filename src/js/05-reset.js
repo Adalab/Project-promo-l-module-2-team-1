@@ -3,19 +3,16 @@
 const resetButtonElement = document.querySelector(".js-reset");
 
 function resetInfo() {
-  localStorage.removeItem("userData");
   resetInputsForm();
-  photo = "url(../images/photo-preview1.jpg)";
-  console.log(photo);
   resetPhotocardPalettes();
   resetPalettes();
-  saveInLocalStorage();
+  clearPhoto();
+  localStorage.clear();
 }
 
 function resetInputsForm() {
   const allInputsForm = document.querySelectorAll(".js-input-text");
   for (const inputForm of allInputsForm) {
-    console.log(inputForm);
     inputForm.value = "";
   }
   updateAllInputs();
@@ -33,6 +30,14 @@ function resetPalettes() {
   checkedPalette.checked = false;
   const paletteDefault = document.querySelector(".js-paletteDefault");
   paletteDefault.checked = true;
+  updatePalette();
+}
+
+function clearPhoto() {
+  photo = "";
+  profilePreview.style.backgroundImage = "";
+  profileImage.style.backgroundImage = "";
+  updatePhoto();
 }
 
 resetButtonElement.addEventListener("click", resetInfo);
