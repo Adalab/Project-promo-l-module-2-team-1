@@ -3,26 +3,36 @@
 const resetButtonElement = document.querySelector(".js-reset");
 
 function resetInfo() {
-  localStorage.clear("userData");
-  const allInputsData = document.querySelectorAll(".js-input-text");
-  for (const allInputsDataoff of allInputsData) {
-    allInputsDataoff.value = "";
-  }
-  /* document.querySelector("js-palette").checked = true;
-  photoCardElement.classList.remove(".palette4");
-  photoCardElement.classList.remove(".palette3");
-  photoCardElement.classList.add(".palette2");
-  photoCardElement.classList.add(".palette1");
-  localStorage.removeItem("data");
-  profileImage.style.backgroundImage = `url(${currentPhoto})`;
-  profilePreview.style.backgroundImage = `url(${currentPhoto})`;
-  shareFormLink.innerHTML = "";
-  createLink.classList.add("show");
-  shareButton.setAttribute("disabled", "false");
-  shareButton.classList.remove("disabled");
-
-  updateAllInputs();
-  updatePalette();
-  updatePhoto();  */
+  localStorage.removeItem("userData");
+  resetInputsForm();
+  photo = "url(../images/photo-preview1.jpg)";
+  console.log(photo);
+  resetPhotocardPalettes();
+  resetPalettes();
+  saveInLocalStorage();
 }
+
+function resetInputsForm() {
+  const allInputsForm = document.querySelectorAll(".js-input-text");
+  for (const inputForm of allInputsForm) {
+    console.log(inputForm);
+    inputForm.value = "";
+  }
+  updateAllInputs();
+}
+
+function resetPhotocardPalettes() {
+  const checkedPalette = document.querySelector(".js-palette:checked");
+  const checkedPaletteValue = checkedPalette.value;
+  photoCardElement.classList.remove("palette-" + checkedPaletteValue);
+  photoCardElement.classList.add("palette-1");
+}
+
+function resetPalettes() {
+  const checkedPalette = document.querySelector(".js-palette:checked");
+  checkedPalette.checked = false;
+  const paletteDefault = document.querySelector(".js-paletteDefault");
+  paletteDefault.checked = true;
+}
+
 resetButtonElement.addEventListener("click", resetInfo);
