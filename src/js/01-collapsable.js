@@ -32,19 +32,19 @@ function changeCollapsable(ev) {
 }
 
 //CREA TU TARJETA, esta función es para el collapsable del botón crea tu tarjeta
-/* const hiddenButton = document.querySelector(".js-hidden");
+const hiddenButton = document.querySelector(".js-hidden");
 
 function handleHiddenButton(ev) {
   const hiddenCollapsableButton = document.querySelector(
     ".js-hidden-collapsable"
   );
+  console.log(hiddenCollapsableButton);
   const clicked = ev.currentTarget;
-  if (clicked === hiddenCollapsableButton) {
-    hiddenCollapsableButton.classList.add("hidden__container");
-  } else {
-    hiddenCollapsableButton.classList.remove("hidden__container");
+  console.log(clicked);
+
+  if (clicked !== hiddenCollapsableButton) {
+    hiddenCollapsableButton.classList.remove("hidden");
   }
 }
 
 hiddenButton.addEventListener("click", handleHiddenButton);
- */
