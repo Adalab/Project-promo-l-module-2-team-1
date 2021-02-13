@@ -8,7 +8,7 @@ function updatePalette() {
     const checkedPalette = document.querySelector('.js-palette:checked');
     const checkedPaletteValue = checkedPalette.value;
     photoCardElement.classList.add('palette-' + checkedPaletteValue);
-    saveInLocalStorage()
+    saveInLocalStorage();
 }
 
 for (const onePalette of paletteElements) {

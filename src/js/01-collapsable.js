@@ -19,7 +19,6 @@ function changeCollapsable(ev) {
   const allCollapsables = document.querySelectorAll(
     ".js-collapsable-container"
   );
-
   for (const collapsable of allCollapsables) {
     // compruebo si es el collapsable pulsado
     if (clickedCollapsable === collapsable) {

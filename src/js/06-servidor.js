@@ -18,7 +18,7 @@ function handleCreateBtn(ev) {
       shareLink = data.cardURL;
       if (data.success === true) {
         cardResultElement.innerHTML += `<h3 class="section__share_copy">La tarjeta ha sido creada:</h3>`;
-        cardResultElement.innerHTML += `<p class="text_link_card"><a href="${shareLink}" class="section__twitter__button js-twitter-link" target="_blank">${shareLink}</a></p>`;
+        cardResultElement.innerHTML += `<p class="text_link_card"><a  class"link-card" href="${shareLink}" class="section__twitter__button js-twitter-link" target="_blank">${shareLink}</a></p>`;
         cardResultElement.innerHTML += `<a class="share js-btn-twitter">
         <i class="fa fa-twitter" aria-hidden="true"></i> Compartir en Twitter
       </a>`;
@@ -31,7 +31,7 @@ function handleCreateBtn(ev) {
         );
       } else {
         cardResultElement.innerHTML += `<h4 class= "title1">La tarjeta no puede ser creada aún</h4>`;
-        cardResultElement.innerHTML += `<h4 class = "title1">Por favor revisa todos los campos</h4>`;
+        cardResultElement.innerHTML += `<h4 class = "title1">Por favor, completa todos los campos marcados con *</h4>`;
       }
     });
 }
