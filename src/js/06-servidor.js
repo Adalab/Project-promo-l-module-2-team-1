@@ -20,15 +20,14 @@ function handleCreateBtn(ev) {
       if (data.success === true) {
         cardResultElement.innerHTML += `<h3 class="section__share_copy">La tarjeta ha sido creada:</h3>`;
 
-        cardResultElement.innerHTML += `<p class="text_link_card"><a href="${shareLink}" class="section__twitter__button js-twitter-link" target="_blank">${shareLink}</a></p>`;
+        cardResultElement.innerHTML += `<p class="text_link_card"><a class"link-card" href="${shareLink}" class="section__twitter__button js-twitter-link" target="_blank">${shareLink}</a></p>`;
         cardResultElement.innerHTML += `<button class="share js-btn-twitter">
         <i class="fa fa-twitter" aria-hidden="true"></i> Compartir en Twitter
       </button>`;
         cardResultElement.innerHTML += `</a>`;
-        createBtn.style.backgroundColor = "grey";
-        createBtn.disable = true;
+        createBtn.disabled = true;
       } else {
-        cardResultElement.innerHTML += data.error;
+        cardResultElement.innerHTML += `Por favor, completa todos los campos marcados con *`;
       }
     });
 }

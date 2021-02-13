@@ -30,7 +30,7 @@
       color: #ffffff;
       margin-right: 9px;
     }
-    &disabled {
+    &:disabled {
       background-color: gray;
       border: 1px solid gray;
       cursor: not-allowed;
