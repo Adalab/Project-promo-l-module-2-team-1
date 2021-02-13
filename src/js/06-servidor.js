@@ -17,11 +17,9 @@ function handleCreateBtn(ev) {
     .then((data) => {
       console.log("Server response:", data);
       if (data.success === true) {
-        cardResultElement.innerHTML += "<h2>Tu tarjeta ha sido creada</h2>";
-        cardResultElement.innerHTML += data.cardURL;
-        cardResultElement.innerHTML += "<button>Twitter</button>";
+        cardResultElement.innerHTML = data.cardURL;
       } else {
-        cardResultElement.innerHTML = "Revisa los campos, te faltan algunos!";
+        cardResultElement.innerHTML = data.error;
       }
     });
 }
