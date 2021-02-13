@@ -5,11 +5,11 @@
   align-items: center;
   width: 100%;
   padding: 38px 35px 40px 45px;
-  background-image: linear-gradient(
+  background-image: url(../images/back1.png); /*linear-gradient(
     to bottom,
     $colorBackSilver,
     $colorBackGrey
-  );
+  );*/
   @media all and (min-width: 768px) {
     width: 329px;
     padding: 0px 44px 260px 45px;
@@ -27,7 +27,8 @@
   width: 75px;
   height: 30px;
   margin-bottom: 20px;
-  border: solid 1px $color-background-cards;
+  border: solid 1px $color-secondary;
+  background-color: $color-background-landing;
   border-radius: 15px;
   display: flex;
   flex-direction: row-reverse;
@@ -36,7 +37,7 @@
   font-size: 12px;
 
   &__link {
-    background-color: transparent;
+    background-color: $color-background-landing;
     border: 0;
     text-decoration: none;
     text-transform: uppercase;
