@@ -3,7 +3,6 @@ const createBtn = document.querySelector(".js-create-btn");
 const cardResultElement = document.querySelector(".js-card-result");
 function handleCreateBtn(ev) {
   ev.preventDefault();
-  console.log("Mis datos", getUserData());
   const url = "https://awesome-profile-cards.herokuapp.com/card";
   const data = getUserData();
   fetch(url, {
@@ -19,7 +18,6 @@ function handleCreateBtn(ev) {
       shareLink = data.cardURL;
       if (data.success === true) {
         cardResultElement.innerHTML += `<h3 class="section__share_copy">La tarjeta ha sido creada:</h3>`;
-
         cardResultElement.innerHTML += `<p class="text_link_card"><a href="${shareLink}" class="section__twitter__button js-twitter-link" target="_blank">${shareLink}</a></p>`;
         cardResultElement.innerHTML += `<a class="share js-btn-twitter">
         <i class="fa fa-twitter" aria-hidden="true"></i> Compartir en Twitter
