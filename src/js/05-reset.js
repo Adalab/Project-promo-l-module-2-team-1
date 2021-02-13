@@ -7,6 +7,7 @@ function resetInfo() {
   resetPhotocardPalettes();
   resetPalettes();
   clearPhoto();
+
   localStorage.clear();
 }
 
