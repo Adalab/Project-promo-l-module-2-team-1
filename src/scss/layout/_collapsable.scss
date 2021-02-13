@@ -1,12 +1,11 @@
 .collapsable--close {
   .hidden__container {
     display: none;
-    animation: intro;
   }
   .fa-leaf {
     animation: intro;
     animation-timing-function: ease;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-iteration-count: 1;
   }
 }

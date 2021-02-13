@@ -17,7 +17,7 @@ Recuperar del local storage:
 - 5º Llamamos a las funciones que replican los datos desde el formulario a la tarjeta
 */
 
-// cuando la usuaria cambia cualquier cosa en el formulario debemos llamar a esta función
+
 function getUserData() {
   return {
     photo: photo,
@@ -37,7 +37,7 @@ function saveInLocalStorage() {
   const userDataInString = JSON.stringify(userData);
   // lo guardo en el local storage en el campo que me apetece
   localStorage.setItem("userData", userDataInString);
-}
+};
 
 // al arrancar la página recogemos los datos desde el local storage y actualizamos el formulario
 function getFromLocalStorage() {
@@ -69,7 +69,6 @@ function getFromLocalStorage() {
     updateAllInputs();
     updatePalette();
     updatePhoto();
-    resetInfo();
   }
 }
 
