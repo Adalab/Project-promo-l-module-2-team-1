@@ -13,14 +13,14 @@
     font-family: $font-title;
     font-size: 19.2px;
     font-weight: 900;
-    color: $color-icons;
+    color: #ffffff;
     @media all and (min-width: 768px) {
       font-size: 24px;
     }
   }
   &__subtitle {
     font-size: 12.8px;
-    color: whitesmoke;
+    color: #cfc5a5;
     @media all and (min-width: 768px) {
       font-size: 16px;
       width: 331px;
@@ -36,6 +36,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-duration: 2s;
+    animation-name: scale;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
     @media all and (min-width: 768px) {
       /*  margin-top: 186px; */
       /*       margin-bottom: 59px;
@@ -50,11 +54,20 @@
     }
   }
 }
-
+@keyframes scale {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .article {
   width: 268px;
   border-radius: 4px;
-  border: solid 1.6px rgba(225, 115, 52, 0.2);
+  border: solid 1.6px rgba(255, 255, 255, 0.6);
   padding: 15px 20px 9.8px 20px;
   margin-top: 17.8px;
   @media all and (min-width: 768px) {
@@ -78,7 +91,7 @@
       }
     }
     &--icon {
-      color: $color-icons;
+      color: wheat;
       font-size: 22.4px;
       @media all and (min-width: 768px) {
         font-size: 28px;
