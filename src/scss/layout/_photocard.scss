@@ -5,11 +5,12 @@
   align-items: center;
   width: 100%;
   padding: 38px 35px 40px 45px;
-  background-image: linear-gradient(
+  background-image: url(../images/bg-2.png);
+  /*   linear-gradient(
     to bottom,
     $colorBackSilver,
     $colorBackGrey
-  );
+  ); */
   @media all and (min-width: 768px) {
     width: 329px;
     padding: 0px 44px 260px 45px;
@@ -56,6 +57,7 @@
 }
 .fa-trash {
   padding-right: 8px;
+  color: #545454;
 }
 .container {
   padding-top: 21px;
@@ -193,7 +195,7 @@
     height: 200px;
     background-position: center;
     background-size: contain;
-    background-image: url("../images/photo-preview1.jpg");
+    background-image: url("../images/photo-preview2.jpg");
     background-repeat: no-repeat;
   }
   &__list {

@@ -20,7 +20,7 @@
   }
   &__subtitle {
     font-size: 12.8px;
-    color: $color-primary;
+    color: whitesmoke;
     @media all and (min-width: 768px) {
       font-size: 16px;
       width: 331px;
@@ -32,7 +32,7 @@
     width: 129px;
     height: 42px;
     border-radius: 21px;
-    background-color: $color-palette1-dark;
+    background-color: #545454;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,7 +72,7 @@
       display: flex;
       flex-direction: column-reverse;
       font-size: 12.8px;
-      color: $color-secondary;
+      color: whitesmoke;
       @media all and (min-width: 768px) {
         font-size: 16px;
       }
@@ -85,4 +85,11 @@
       }
     }
   }
+}
+.transparent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(68, 66, 66, 0.5);
+  padding: 10px 10px;
 }

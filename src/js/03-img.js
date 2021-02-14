@@ -39,7 +39,7 @@ function writeImage() {
 }
 
 function updatePhoto() {
-  const currentPhoto = photo || "url(../images/photo-preview1.jpg)";
+  const currentPhoto = photo || "url(../images/photo-preview2.jpg)";
   profilePreview.style.backgroundImage = `url(${currentPhoto})`;
   profileImage.style.backgroundImage = `url(${currentPhoto})`;
 
