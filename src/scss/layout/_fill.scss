@@ -37,11 +37,12 @@
       border: solid $color-icons;
       border-radius: 3px;
       box-shadow: 0 0 4px 0 $color-black;
+      margin-bottom: 20px;
+      text-align: center;
       font-family: $font-primary;
       font-size: 14px;
       color: $color-background-cards;
       margin-top: 10px;
-      margin-bottom: 20px;
     }
     &--box {
       width: 30px;
