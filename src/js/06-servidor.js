@@ -1,7 +1,9 @@
 "use strict";
 const createBtn = document.querySelector(".js-create-btn");
 const cardResultElement = document.querySelector(".js-card-result");
+
 function handleCreateBtn(ev) {
+  cardResultElement.innerHTML = "";
   ev.preventDefault();
   const url = "https://awesome-profile-cards.herokuapp.com/card";
   const data = getUserData();

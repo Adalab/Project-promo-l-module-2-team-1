@@ -39,14 +39,14 @@
   justify-content: center;
   align-items: center;
   font-size: 12px;
-
+  color: blanchedalmond;
   &__link {
     background-color: transparent;
     border: 0;
     text-decoration: none;
     text-transform: uppercase;
     font-family: $font-primary;
-    color: $color-secondary;
+    color: blanchedalmond;
     &:focus {
       outline: none;
     }
@@ -57,7 +57,7 @@
 }
 .fa-trash {
   padding-right: 8px;
-  color: #545454;
+  color: blanchedalmond;
 }
 .container {
   padding-top: 21px;
