@@ -1,5 +1,5 @@
 .main {
-  background-color: $color-background-landing;
+  //background-color: $color-background-landing;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -13,14 +13,14 @@
     font-family: $font-title;
     font-size: 19.2px;
     font-weight: 900;
-    color: $color-icons;
+    color: white;
     @media all and (min-width: 768px) {
       font-size: 24px;
     }
   }
   &__subtitle {
     font-size: 12.8px;
-    color: $color-primary;
+    color: rgb(133, 228, 133);
     @media all and (min-width: 768px) {
       font-size: 16px;
       width: 331px;
@@ -32,7 +32,7 @@
     width: 129px;
     height: 42px;
     border-radius: 21px;
-    background-color: $color-palette1-dark;
+    background-color: #545454;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,17 +72,24 @@
       display: flex;
       flex-direction: column-reverse;
       font-size: 12.8px;
-      color: $color-secondary;
+      color: whitesmoke;
       @media all and (min-width: 768px) {
         font-size: 16px;
       }
     }
     &--icon {
-      color: $color-icons;
+      color: wheat;
       font-size: 22.4px;
       @media all and (min-width: 768px) {
         font-size: 28px;
       }
     }
   }
+}
+.transparent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(68, 66, 66, 0.5);
+  padding: 10px 10px;
 }
