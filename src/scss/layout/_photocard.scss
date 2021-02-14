@@ -41,8 +41,9 @@
   font-size: 12px;
   color: #373333;
   &:hover {
-    background-color: $color-background-landing;
+    background-color: rgba(156, 140, 111, 0.6);
     cursor: pointer;
+    transition: ease 1s;
   }
   &__link {
     background-color: transparent;
