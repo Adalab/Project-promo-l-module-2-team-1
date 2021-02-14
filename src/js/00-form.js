@@ -77,4 +77,4 @@ const inputTextElements = document.querySelectorAll(".js-input-text");
 
 for (const inputTextElement of inputTextElements) {
   inputTextElement.addEventListener("keyup", updateAllInputs);
-}
+};

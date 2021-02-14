@@ -80,7 +80,10 @@
   font-family: $font-primary, SemiBold;
   color: $color-icons;
   font-size: 12px;
-  width: 300px;
+  &:link {
+    text-decoration: none;
+    color: $color-icons;
+  }
 }
 
 .share {
@@ -97,6 +100,10 @@
   border-radius: 3px;
   border: transparent;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  text-decoration: none;
+  &:link {
+    text-decoration: none;
+  }
 }
 
 .hidden {

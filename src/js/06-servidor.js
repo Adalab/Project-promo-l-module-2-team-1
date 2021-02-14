@@ -18,12 +18,11 @@ function handleCreateBtn(ev) {
       shareLink = data.cardURL;
       if (data.success === true) {
         cardResultElement.innerHTML += `<h3 class="section__share_copy">La tarjeta ha sido creada:</h3>`;
-        cardResultElement.innerHTML += `<p class="text_link_card"><a  class"link-card" href="${shareLink}" class="section__twitter__button js-twitter-link" target="_blank">${shareLink}</a></p>`;
-        cardResultElement.innerHTML += `<a class="share js-btn-twitter">
+        cardResultElement.innerHTML += `<p><a href="${shareLink}" class="text_link_card section__twitter__button js-twitter-link" target="_blank">${shareLink}</a></p>`;
+        cardResultElement.innerHTML += `<a class="share js-btn-twitter" target="_blank">
         <i class="fa fa-twitter" aria-hidden="true"></i> Compartir en Twitter
       </a>`;
-        createBtn.style.backgroundColor = "grey";
-        createBtn.disable = true;
+        createBtn.disabled = true;
         const twitterLink = document.querySelector(".js-btn-twitter");
         twitterLink.setAttribute(
           "href",

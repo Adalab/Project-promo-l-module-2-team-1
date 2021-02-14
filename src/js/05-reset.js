@@ -6,6 +6,7 @@ function resetInfo() {
   resetInputsForm();
   resetPhotocardPalettes();
   resetPalettes();
+  resetShare();
   clearPhoto();
 
   localStorage.clear();
@@ -39,6 +40,13 @@ function clearPhoto() {
   profilePreview.style.backgroundImage = "";
   profileImage.style.backgroundImage = "";
   updatePhoto();
+}
+
+function resetShare() {
+  const createBtn = document.querySelector(".js-create-btn");
+  createBtn.disabled = false;
+  const cardResultElement = document.querySelector(".js-card-result");
+  cardResultElement.innerHTML = "";
 }
 
 resetButtonElement.addEventListener("click", resetInfo);
