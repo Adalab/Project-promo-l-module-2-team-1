@@ -40,10 +40,12 @@
   align-items: center;
   font-size: 12px;
   color: #373333;
+  cursor: pointer;
   &:hover {
-    background-color: rgba(156, 140, 111, 0.6);
     cursor: pointer;
-    transition: ease 1s;
+    background-color: rgba(156, 140, 111, 0.6);
+    transition: ease 1s background-color;
+    transform: scale(1.1);
   }
   &__link {
     background-color: transparent;
@@ -53,6 +55,7 @@
     font-family: $font-primary;
     font-weight: 700;
     color: #373333;
+    cursor: pointer;
     &:focus {
       outline: none;
     }
@@ -70,15 +73,7 @@
   .tittlescontainer {
     border-left: solid 5px $color-palette1-medium;
   }
-  .photocard__list {
-    background-color: $color-background1;
-  }
-  .container {
-    background-color: $color-background1;
-  }
-  .photocard__img {
-    background-color: $color-background1;
-  }
+
   .photocard__title {
     color: $color-palette1-dark;
   }
@@ -96,21 +91,14 @@
   .tittlescontainer {
     border-left: solid 5px $color-palette2-medium;
   }
-  .photocard__list {
-    background-color: $color-background2;
-  }
-  .container {
-    background-color: $color-background2;
-  }
+
   .photocard__title {
     color: $color-palette2-dark;
   }
   .photocard__title2 {
     color: $color-palette2-dark;
   }
-  .photocard__img {
-    background-color: $color-background2;
-  }
+
   .photocard__list--link {
     color: $color-palette2-dark;
   }
@@ -128,15 +116,7 @@
   .photocard__title2 {
     color: $color-palette3-dark;
   }
-  .photocard__list {
-    background-color: $color-background3;
-  }
-  .photocard__img {
-    background-color: $color-background3;
-  }
-  .container {
-    background-color: $color-background3;
-  }
+
   .photocard__list--item {
     border: solid 2px $color-palette3-medium;
   }
@@ -151,20 +131,12 @@
   .photocard__title {
     color: $color-palette4-dark;
   }
-  .photocard__img {
-    background-color: $color-background4;
-  }
+
   .photocard__title2 {
     color: $color-palette4-dark;
   }
   .photocard__list--item {
     border: solid 2px $color-palette4-medium;
-  }
-  .photocard__list {
-    background-color: $color-background4;
-  }
-  .container {
-    background-color: $color-background4;
   }
   .photocard__list--link {
     color: $color-palette4-dark;
@@ -202,6 +174,9 @@
     background-repeat: no-repeat;
   }
   &__list {
+    :hover {
+      transform: scale(1.1);
+    }
     display: flex;
     padding: 10px 62px 12px 20px;
     &--item {
